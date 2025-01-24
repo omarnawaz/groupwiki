@@ -12,7 +12,7 @@ Welcome to the Climate and Atmospheric Science for Action Group (**CASA**) at Ca
 
 In this wiki, you will find information on best practices for research as well as links and information about common models and data used in our work. This wiki is always evolving, so if you find something unclear or if you notice a specific subject of interest that is missing, please let us know.
 
-.. image:: ../../../fwd_sim.gif
+.. image:: fwd_sim.gif
    :width: 350
    :align: center
 
