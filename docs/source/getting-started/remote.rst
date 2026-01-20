@@ -31,7 +31,7 @@ Before starting, make sure you have:
 
 - **VS Code installed** on your local machine (https://code.visualstudio.com/)
 - **SSH access to Falcon** (completed the :doc:`access` and :doc:`loggingin` guides)
-- **SSH config set up** (configured `~/.ssh/config` as shown in :doc:`loggingin`)
+- **SSH config set up** (configured ``~/.ssh/config`` as shown in :doc:`loggingin`)
 - **VPN access** to Cardiff University (required for all Falcon connections)
 
 Step 1: Install VS Code
@@ -59,7 +59,7 @@ Step 3: Open a Remote-SSH Connection
 
 **Quick Method: Using the Command Palette**
 
-1. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette
+1. Press ``Ctrl+Shift+P`` (Windows/Linux) or ``Cmd+Shift+P`` (macOS) to open the Command Palette
 2. Type "Remote-SSH: Connect to Host..."
 3. Select it
 4. Choose your host (if you've set up SSH config, you'll see "falcon" in the list)
@@ -77,7 +77,7 @@ Step 3: Open a Remote-SSH Connection
 **First Time Connection**
 
 The first time you connect, VS Code will:
-- Install a server on Falcon (in `~/.vscode-server`)
+- Install a server on Falcon (in ``~/.vscode-server``)
 - Download necessary dependencies
 - This takes a few minutes but only happens once
 
@@ -92,7 +92,7 @@ Step 4: Open a Project Folder
 Once connected to Falcon:
 
 1. Click **File** > **Open Folder**
-2. Navigate to your project folder (e.g., `/home/yourusername/projects/myproject`)
+2. Navigate to your project folder (e.g., ``/home/yourusername/projects/myproject``)
 3. Click **Select Folder**
 4. VS Code will load your project
 
@@ -103,23 +103,23 @@ Using the Integrated Terminal
 
 One of the most useful features is the integrated terminal, which automatically runs commands on Falcon:
 
-1. Press `` Ctrl+` `` (backtick) or go to **Terminal** > **New Terminal**
+1. Press ``Ctrl+``` (backtick) or go to **Terminal** > **New Terminal**
 2. A terminal opens at the bottom of VS Code
 3. Any command you run executes on Falcon
 4. You can type bash commands just like SSH-ing in normally
 
 This is perfect for:
-- Running your code: `python analysis.py`
-- Checking job status: `squeue -u $USER`
-- Submitting SLURM jobs: `sbatch myjob.sh`
+- Running your code: ``python analysis.py``
+- Checking job status: ``squeue -u $USER``
+- Submitting SLURM jobs: ``sbatch myjob.sh``
 - Testing quick commands before making changes
 
 **Example Workflow:**
 
 1. Edit your Python script in the editor
-2. Save the file (`Ctrl+S`)
+2. Save the file (``Ctrl+S``)
 3. Open the integrated terminal
-4. Run `python -u analysis.py` to test
+4. Run ``python -u analysis.py`` to test
 5. See the output in the terminal
 6. Make fixes in the editor
 7. Re-run the command
@@ -158,38 +158,38 @@ Useful Keyboard Shortcuts
 
 **Navigation and Editing**
 
-```
-Ctrl+P              Quick file open (start typing filename)
-Ctrl+Shift+P        Command palette (search any command)
-Ctrl+F              Find in file
-Ctrl+H              Find and replace
-Ctrl+D              Select next occurrence of word
-Ctrl+K Ctrl+F       Format document
-```
+.. code-block:: text
+
+   Ctrl+P              Quick file open (start typing filename)
+   Ctrl+Shift+P        Command palette (search any command)
+   Ctrl+F              Find in file
+   Ctrl+H              Find and replace
+   Ctrl+D              Select next occurrence of word
+   Ctrl+K Ctrl+F       Format document
 
 **Terminal**
 
-```
-Ctrl+`              Toggle integrated terminal
-Ctrl+Shift+`        New terminal
-```
+.. code-block:: text
+
+   Ctrl+`              Toggle integrated terminal
+   Ctrl+Shift+`        New terminal
 
 **Remote Connection**
 
-```
-Ctrl+Shift+P then "Remote-SSH: Connect to Host"    Start remote session
-Ctrl+Shift+P then "Remote-SSH: Close Remote"       Disconnect from remote
-```
+.. code-block:: text
+
+   Ctrl+Shift+P then "Remote-SSH: Connect to Host"    Start remote session
+   Ctrl+Shift+P then "Remote-SSH: Close Remote"       Disconnect from remote
 
 **Debugging (if using Python extension)**
 
-```
-F5                  Start debugging
-F9                  Toggle breakpoint
-F10                 Step over
-F11                 Step into
-Shift+F11           Step out
-```
+.. code-block:: text
+
+   F5                  Start debugging
+   F9                  Toggle breakpoint
+   F10                 Step over
+   F11                 Step into
+   Shift+F11           Step out
 
 Common Workflows
 ------------------------------------
@@ -199,8 +199,8 @@ Common Workflows
 1. Connect to Falcon via Remote-SSH
 2. Open your project folder
 3. Make changes to your code in the editor
-4. Open the integrated terminal (`Ctrl+``)
-5. Run your code: `python script.py`
+4. Open the integrated terminal (``Ctrl+```)
+5. Run your code: ``python script.py``
 6. See output in the terminal
 7. Set breakpoints by clicking line numbers
 8. Press F5 to debug with stepping
@@ -211,15 +211,15 @@ Common Workflows
 1. Connect to Falcon
 2. Edit your job script in VS Code
 3. Open the terminal
-4. Run `sbatch myjob.sh`
-5. Monitor with `squeue -u $USER`
+4. Run ``sbatch myjob.sh``
+5. Monitor with ``squeue -u $USER``
 6. Edit and resubmit as needed
 
 **Workflow 3: Interactive Session Development**
 
 1. Connect to Falcon
 2. Open terminal
-3. Test commands interactively: `python -i script.py`
+3. Test commands interactively: ``python -i script.py``
 4. Iterate on code in the editor
 5. Re-run with fresh imports
 
@@ -230,19 +230,19 @@ Troubleshooting
 
 - Make sure your VPN is on
 - Check that your SSH config is correct (see :doc:`loggingin`)
-- Try connecting directly: `ssh falcon` in a local terminal first
+- Try connecting directly: ``ssh falcon`` in a local terminal first
 - Your Falcon password may have expired—check with Omar
 
 **"Connection timeout":**
 
 - Check your VPN connection
-- Verify you can SSH normally: `ssh falcon`
+- Verify you can SSH normally: ``ssh falcon``
 - Try again after a minute (server might be slow)
 
 **"Remote server failed to start":**
 
-- Sometimes the `.vscode-server` folder gets corrupted
-- Run this in your local terminal: `ssh falcon 'rm -rf ~/.vscode-server'`
+- Sometimes the ``.vscode-server`` folder gets corrupted
+- Run this in your local terminal: ``ssh falcon 'rm -rf ~/.vscode-server'``
 - Reconnect from VS Code—it will reinstall
 
 **Extensions not working on remote:**
@@ -262,7 +262,7 @@ Troubleshooting
 
 - Make sure your SSH config is set up (see :doc:`loggingin`)
 - You can manually type the host: type "c.sglmn3@falconlogin.cf.ac.uk"
-- Check that the SSH config file is at `~/.ssh/config`
+- Check that the SSH config file is at ``~/.ssh/config``
 
 Tips for Efficient Remote Development
 ------------------------------------
@@ -270,7 +270,7 @@ Tips for Efficient Remote Development
 1. **Use integrated terminal**: It's faster than alt-tabbing between terminals
 2. **Keep workspace files local**: VS Code can sync settings between machines
 3. **Use Git for version control**: Clone your repo on Falcon and use the built-in Git tools
-4. **Set up a .vscode folder**: Create `.vscode/settings.json` in your project for project-specific settings
+4. **Set up a .vscode folder**: Create ``.vscode/settings.json`` in your project for project-specific settings
 5. **Use proper Python environments**: Activate virtual environments in the terminal before running code
 6. **Commit frequently**: If something breaks, you can revert
 
@@ -279,33 +279,33 @@ Example Project Setup
 
 Here's a recommended folder structure for a project on Falcon:
 
-```
-~/projects/myproject/
-├── .vscode/
-│   └── settings.json          # Project-specific VS Code settings
-├── .gitignore
-├── README.md
-├── data/
-│   ├── inputs/                # Input files
-│   └── outputs/               # Results
-├── src/
-│   ├── __init__.py
-│   ├── analysis.py
-│   └── utils.py
-├── scripts/
-│   └── process.py
-├── job_scripts/
-│   ├── job1.sh
-│   └── job2.sh
-└── results/
-    └── .gitkeep
-```
+.. code-block:: text
+
+   ~/projects/myproject/
+   ├── .vscode/
+   │   └── settings.json          # Project-specific VS Code settings
+   ├── .gitignore
+   ├── README.md
+   ├── data/
+   │   ├── inputs/                # Input files
+   │   └── outputs/               # Results
+   ├── src/
+   │   ├── __init__.py
+   │   ├── analysis.py
+   │   └── utils.py
+   ├── scripts/
+   │   └── process.py
+   ├── job_scripts/
+   │   ├── job1.sh
+   │   └── job2.sh
+   └── results/
+       └── .gitkeep
 
 Then in VS Code:
-1. Open the `~/projects/myproject/` folder
-2. Edit files in the `src/` folder
+1. Open the ``~/projects/myproject/`` folder
+2. Edit files in the ``src/`` folder
 3. Use the integrated terminal to run scripts
-4. Save results to the `results/` folder
+4. Save results to the ``results/`` folder
 5. Commit to Git
 
 Getting Help
