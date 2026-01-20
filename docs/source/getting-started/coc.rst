@@ -102,14 +102,12 @@ If you experience or witness harassment or discrimination, you have several opti
 
 **Reporting Options:**
 - Speak directly with the involved person if you feel safe doing so
-- Contact group leadership confidentially
+- Contact Omar confidentially
 - Submit a formal complaint through your institution
-- Contact your institution's HR department, Title IX office, or ombudsperson
-- Use your institution's anonymous reporting hotline
 
 **Conflict Resolution:**
 - Minor misunderstandings should first be addressed directly with involved parties in a professional manner
-- If direct conversation doesn't resolve the issue, escalate to group leadership for mediation
+- If direct conversation doesn't resolve the issue, escalate to Omar for mediation
 - For serious matters, formal institutional channels are available
 
 Anti-Racism and Social Awareness
@@ -157,9 +155,7 @@ Remember that harm is sometimes unintentional. When someone points out that your
 Questions and Concerns
 ------------------------------------
 
-If you have questions about this code of conduct, concerns about group dynamics, or need support, please reach out to group leadership. We are committed to addressing issues promptly and fairly, and to maintaining confidentiality when appropriate.
-
-We look forward to working with you and building a lab community where all members can do their best work.
+If you have questions about this code of conduct, concerns about group dynamics, or need support, please reach out to Omar. We are committed to addressing issues promptly and fairly, and to maintaining confidentiality when appropriate.
 
 References and Acknowledgments
 ------------------------------------
